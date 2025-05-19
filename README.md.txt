@@ -1,1 +1,0 @@
-Generates certificates for tutoring based on the given HTML template.
