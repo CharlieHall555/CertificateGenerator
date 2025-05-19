@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Certificate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #d0f0fd, #fce38a);
+      font-family: 'Baloo 2', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .certificate {
+      background: white;
+      width: 1000px;
+      padding: 60px 50px;
+      text-align: center;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .certificate::before,
+    .certificate::after {
+      content: '';
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      z-index: 0;
+      opacity: 0.25;
+    }
+
+    .certificate::before {
+      background: #f38181;
+      top: -80px;
+      right: -80px;
+    }
+
+    .certificate::after {
+      background: #a8edea;
+      bottom: -80px;
+      left: -80px;
+    }
+
+    .header-logo {
+      width: 600px;
+      /* 5x bigger */
+      margin-bottom: 15px;
+      z-index: 1;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 4px;
+      color: #333;
+      z-index: 1;
+      position: relative;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin: 8px 0 30px;
+      color: #666;
+      z-index: 1;
+      position: relative;
+      font-weight: 600;
+    }
+
+    .medal-img {
+      width: 100px;
+      margin: 20px auto;
+      display: block;
+      z-index: 1;
+      position: relative;
+    }
+
+    .presented {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #555;
+      z-index: 1;
+      position: relative;
+    }
+
+    .name {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin: 15px 0;
+      color: #1e88e5;
+      z-index: 1;
+      position: relative;
+    }
+
+    .achievement {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #444;
+      font-weight: 500;
+      z-index: 1;
+      position: relative;
+    }
+
+    .signature-block {
+      margin-top: 60px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .signature {
+      font-family: 'Pacifico', cursive;
+      font-size: 32px;
+      margin-bottom: 0;
+      color: #3e3e3e;
+    }
+
+    .sig-name {
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="certificate">
+    <img src="logo.png" alt="Milisan School Logo" class="header-logo">
+    <h1>CERTIFICATE OF ACHIEVEMENT</h1>
+    <h2>SPRING SEMESTER</h2>
+    <img src="medal.png" alt="Medal" class="medal-img">
+    <p class="presented">This certificate is presented to</p>
+    <h3 class="name">GRIFFIN</h3>
+    <p class="achievement">for learning Roblox Studio LUA coding</p>
+    <div class="signature-block">
+      <p class="signature">Charlie Hall</p>
+      <p class="sig-name">CHARLIE HALL</p>
+    </div>
+  </div>
+</body>
+
+</html>
